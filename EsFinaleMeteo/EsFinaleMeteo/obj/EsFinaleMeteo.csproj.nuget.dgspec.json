@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Scuola\\1- Info\\AspNetCore\\EsFinaleMeteo\\EsFinaleMeteo\\EsFinaleMeteo.csproj": {}
+    "C:\\Users\\brozzoni.17118\\Documents\\GitHub\\Meteo\\EsFinaleMeteo\\EsFinaleMeteo\\EsFinaleMeteo.csproj": {}
   },
   "projects": {
-    "D:\\Scuola\\1- Info\\AspNetCore\\EsFinaleMeteo\\EsFinaleMeteo\\EsFinaleMeteo.csproj": {
+    "C:\\Users\\brozzoni.17118\\Documents\\GitHub\\Meteo\\EsFinaleMeteo\\EsFinaleMeteo\\EsFinaleMeteo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Scuola\\1- Info\\AspNetCore\\EsFinaleMeteo\\EsFinaleMeteo\\EsFinaleMeteo.csproj",
+        "projectUniqueName": "C:\\Users\\brozzoni.17118\\Documents\\GitHub\\Meteo\\EsFinaleMeteo\\EsFinaleMeteo\\EsFinaleMeteo.csproj",
         "projectName": "EsFinaleMeteo",
-        "projectPath": "D:\\Scuola\\1- Info\\AspNetCore\\EsFinaleMeteo\\EsFinaleMeteo\\EsFinaleMeteo.csproj",
+        "projectPath": "C:\\Users\\brozzoni.17118\\Documents\\GitHub\\Meteo\\EsFinaleMeteo\\EsFinaleMeteo\\EsFinaleMeteo.csproj",
         "packagesPath": "C:\\Users\\brozzoni.17118\\.nuget\\packages\\",
-        "outputPath": "D:\\Scuola\\1- Info\\AspNetCore\\EsFinaleMeteo\\EsFinaleMeteo\\obj\\",
+        "outputPath": "C:\\Users\\brozzoni.17118\\Documents\\GitHub\\Meteo\\EsFinaleMeteo\\EsFinaleMeteo\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

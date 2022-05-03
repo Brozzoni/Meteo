@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "kkDp4n/0Ng1E64NzE6xC7+RU2zXLRzlEvNYCJnRE5c4qKY94EeqmUSepg8w1ASAjmd8/4qvcMLWBUziUq2IJyw==",
+  "dgSpecHash": "8Xnn0RjzrI5htSvM3S/SG/FbBx95anp+zlkGfCzbxB4+zD0nJQEf8rdk2zYbD1LxQ9Cw6RZTdAhg3RFirVEDiQ==",
   "success": true,
-  "projectFilePath": "D:\\Scuola\\1- Info\\AspNetCore\\EsFinaleMeteo\\EsFinaleMeteo\\EsFinaleMeteo.csproj",
+  "projectFilePath": "C:\\Users\\brozzoni.17118\\Documents\\GitHub\\Meteo\\EsFinaleMeteo\\EsFinaleMeteo\\EsFinaleMeteo.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\brozzoni.17118\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\brozzoni.17118\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.4\\microsoft.aspnetcore.cryptography.internal.5.0.4.nupkg.sha512",

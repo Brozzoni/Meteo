@@ -6,11 +6,10 @@
 <div class="text-center">
     <br />
     <br />
-    <h1 class="text-black-50"><i>Benvenuto in Meteo</i></h1>
+    <h1 class="text-black-50" align="center"><i>Benvenuto in MeteoB</i></h1>
     <br />
     <br />
 </div>
-<br />
 <form method="post">
     <div class="row">
         <div class="col-lg-4"></div>
@@ -26,17 +25,14 @@
                 }
             </style>
             <h5 class="text-black-50" align="center"><i>Inserire la città desiderata</i></h5>
-            <div>
-                <label>Città</label>
+            <div align="center">
                 <input @*asp-for=""*@ />
                 <span @*asp-validation-for=""*@></span>
-            </div>      
-            <br />
+            </div>    
             <br />
             <div class="text-center">
                 <button type="submit" id="cerca" class="btn btn-info" style="width:100px">Cerca</button>
             </div>
-
         </div>
     </div>
 </form>
