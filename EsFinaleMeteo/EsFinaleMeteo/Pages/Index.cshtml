@@ -1,0 +1,42 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+<div class="text-center">
+    <br />
+    <br />
+    <h1 class="text-black-50"><i>Benvenuto in Meteo</i></h1>
+    <br />
+    <br />
+</div>
+<br />
+<form method="post">
+    <div class="row">
+        <div class="col-lg-4"></div>
+        <div class="col-lg-4">
+            <style>
+                .center {
+                    margin: 0;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    -ms-transform: translate(-50%, -50%);
+                    transform: translate(-50%, -50%);
+                }
+            </style>
+            <h5 class="text-black-50" align="center"><i>Inserire la città desiderata</i></h5>
+            <div>
+                <label>Città</label>
+                <input @*asp-for=""*@ />
+                <span @*asp-validation-for=""*@></span>
+            </div>      
+            <br />
+            <br />
+            <div class="text-center">
+                <button type="submit" id="cerca" class="btn btn-info" style="width:100px">Cerca</button>
+            </div>
+
+        </div>
+    </div>
+</form>
