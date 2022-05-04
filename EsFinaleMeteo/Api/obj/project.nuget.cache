@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "kpr840QH7Ws7HQWAF5o6OzJNbvhQCHPBo1c+WyMOeQzJz8ueN7JiGmDKCPnL9taJuxxr4uVIUd+J6KOOa9jLEA==",
+  "dgSpecHash": "6GBBtYp5FKIFzH6NoS9oPo/JoL6Ofry4JRsqY3ZC0LptlrPdNFmvJD/96yT8bdTl3Vj/5GrcqQVtaOCqHIi+4g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\brozzoni.17118\\Documents\\GitHub\\Meteo\\EsFinaleMeteo\\Api\\Api.csproj",
+  "projectFilePath": "C:\\Users\\brozzoni.17118\\Documents\\GitHub\\EsFinaleMeteo\\Api\\Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\brozzoni.17118\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\brozzoni.17118\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",

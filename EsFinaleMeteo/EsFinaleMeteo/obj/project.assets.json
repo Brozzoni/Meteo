@@ -6458,21 +6458,17 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\brozzoni.17118\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\brozzoni.17118\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\brozzoni.17118\\Documents\\GitHub\\Meteo\\EsFinaleMeteo\\EsFinaleMeteo\\EsFinaleMeteo.csproj",
+      "projectUniqueName": "C:\\Users\\brozzoni.17118\\Documents\\GitHub\\EsFinaleMeteo\\EsFinaleMeteo\\EsFinaleMeteo.csproj",
       "projectName": "EsFinaleMeteo",
-      "projectPath": "C:\\Users\\brozzoni.17118\\Documents\\GitHub\\Meteo\\EsFinaleMeteo\\EsFinaleMeteo\\EsFinaleMeteo.csproj",
+      "projectPath": "C:\\Users\\brozzoni.17118\\Documents\\GitHub\\EsFinaleMeteo\\EsFinaleMeteo\\EsFinaleMeteo.csproj",
       "packagesPath": "C:\\Users\\brozzoni.17118\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\brozzoni.17118\\Documents\\GitHub\\Meteo\\EsFinaleMeteo\\EsFinaleMeteo\\obj\\",
+      "outputPath": "C:\\Users\\brozzoni.17118\\Documents\\GitHub\\EsFinaleMeteo\\EsFinaleMeteo\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
         "C:\\Users\\brozzoni.17118\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
