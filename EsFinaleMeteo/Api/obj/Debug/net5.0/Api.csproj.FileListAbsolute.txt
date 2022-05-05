@@ -60,7 +60,6 @@ D:\Scuola\1- Info\AspNetCore\EsFinaleMeteo\Api\obj\Debug\net5.0\Api.pdb
 D:\Scuola\1- Info\AspNetCore\EsFinaleMeteo\Api\obj\Debug\net5.0\Api.genruntimeconfig.cache
 C:\Users\brozzoni.17118\Documents\GitHub\Meteo\EsFinaleMeteo\Api\bin\Debug\net5.0\appsettings.Development.json
 C:\Users\brozzoni.17118\Documents\GitHub\Meteo\EsFinaleMeteo\Api\bin\Debug\net5.0\appsettings.json
-C:\Users\brozzoni.17118\Documents\GitHub\Meteo\EsFinaleMeteo\Api\bin\Debug\net5.0\Api.StaticWebAssets.xml
 C:\Users\brozzoni.17118\Documents\GitHub\Meteo\EsFinaleMeteo\Api\bin\Debug\net5.0\Api.exe
 C:\Users\brozzoni.17118\Documents\GitHub\Meteo\EsFinaleMeteo\Api\bin\Debug\net5.0\Api.deps.json
 C:\Users\brozzoni.17118\Documents\GitHub\Meteo\EsFinaleMeteo\Api\bin\Debug\net5.0\Api.runtimeconfig.json
@@ -73,7 +72,6 @@ C:\Users\brozzoni.17118\Documents\GitHub\Meteo\EsFinaleMeteo\Api\bin\Debug\net5.
 C:\Users\brozzoni.17118\Documents\GitHub\Meteo\EsFinaleMeteo\Api\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\brozzoni.17118\Documents\GitHub\Meteo\EsFinaleMeteo\Api\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\brozzoni.17118\Documents\GitHub\Meteo\EsFinaleMeteo\Api\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-C:\Users\brozzoni.17118\Documents\GitHub\Meteo\EsFinaleMeteo\Api\obj\Debug\net5.0\Api.csproj.AssemblyReference.cache
 C:\Users\brozzoni.17118\Documents\GitHub\Meteo\EsFinaleMeteo\Api\obj\Debug\net5.0\Api.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\brozzoni.17118\Documents\GitHub\Meteo\EsFinaleMeteo\Api\obj\Debug\net5.0\Api.AssemblyInfoInputs.cache
 C:\Users\brozzoni.17118\Documents\GitHub\Meteo\EsFinaleMeteo\Api\obj\Debug\net5.0\Api.AssemblyInfo.cs
@@ -88,3 +86,5 @@ C:\Users\brozzoni.17118\Documents\GitHub\Meteo\EsFinaleMeteo\Api\obj\Debug\net5.
 C:\Users\brozzoni.17118\Documents\GitHub\Meteo\EsFinaleMeteo\Api\obj\Debug\net5.0\ref\Api.dll
 C:\Users\brozzoni.17118\Documents\GitHub\Meteo\EsFinaleMeteo\Api\obj\Debug\net5.0\Api.pdb
 C:\Users\brozzoni.17118\Documents\GitHub\Meteo\EsFinaleMeteo\Api\obj\Debug\net5.0\Api.genruntimeconfig.cache
+C:\Users\brozzoni.17118\Documents\GitHub\Meteo\EsFinaleMeteo\Api\obj\Debug\net5.0\Api.csprojAssemblyReference.cache
+C:\Users\brozzoni.17118\Documents\GitHub\Meteo\EsFinaleMeteo\Api\obj\Debug\net5.0\staticwebassets\Api.StaticWebAssets.xml
