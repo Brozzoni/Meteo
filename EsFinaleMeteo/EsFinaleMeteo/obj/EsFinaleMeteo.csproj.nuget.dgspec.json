@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\brozzoni.17118\\Documents\\GitHub\\EsFinaleMeteo\\EsFinaleMeteo\\EsFinaleMeteo.csproj": {}
+    "C:\\Users\\brozzoni.17118\\Documents\\GitHub\\Meteo\\EsFinaleMeteo\\EsFinaleMeteo\\EsFinaleMeteo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\brozzoni.17118\\Documents\\GitHub\\EsFinaleMeteo\\EsFinaleMeteo\\EsFinaleMeteo.csproj": {
+    "C:\\Users\\brozzoni.17118\\Documents\\GitHub\\Meteo\\EsFinaleMeteo\\EsFinaleMeteo\\EsFinaleMeteo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\brozzoni.17118\\Documents\\GitHub\\EsFinaleMeteo\\EsFinaleMeteo\\EsFinaleMeteo.csproj",
+        "projectUniqueName": "C:\\Users\\brozzoni.17118\\Documents\\GitHub\\Meteo\\EsFinaleMeteo\\EsFinaleMeteo\\EsFinaleMeteo.csproj",
         "projectName": "EsFinaleMeteo",
-        "projectPath": "C:\\Users\\brozzoni.17118\\Documents\\GitHub\\EsFinaleMeteo\\EsFinaleMeteo\\EsFinaleMeteo.csproj",
+        "projectPath": "C:\\Users\\brozzoni.17118\\Documents\\GitHub\\Meteo\\EsFinaleMeteo\\EsFinaleMeteo\\EsFinaleMeteo.csproj",
         "packagesPath": "C:\\Users\\brozzoni.17118\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\brozzoni.17118\\Documents\\GitHub\\EsFinaleMeteo\\EsFinaleMeteo\\obj\\",
+        "outputPath": "C:\\Users\\brozzoni.17118\\Documents\\GitHub\\Meteo\\EsFinaleMeteo\\EsFinaleMeteo\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\brozzoni.17118\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -56,6 +56,10 @@
               "target": "Package",
               "version": "[5.0.16, )"
             },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.16, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[5.0.4, )"
@@ -67,6 +71,10 @@
             "Microsoft.EntityFrameworkCore.Tools": {
               "target": "Package",
               "version": "[5.0.4, )"
+            },
+            "System.Net.Http": {
+              "target": "Package",
+              "version": "[4.3.4, )"
             }
           },
           "imports": [
@@ -87,7 +95,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }

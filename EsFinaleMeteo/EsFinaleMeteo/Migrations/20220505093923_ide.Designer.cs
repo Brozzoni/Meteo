@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EsFinaleMeteo.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20220503092936_utenti")]
-    partial class utenti
+    [Migration("20220505093923_ide")]
+    partial class ide
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

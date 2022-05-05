@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace EsFinaleMeteo.Migrations
 {
-    public partial class utenti : Migration
+    public partial class ide : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

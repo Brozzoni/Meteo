@@ -14,5 +14,7 @@ namespace EsFinaleMeteo.Data
 
         }
         public DbSet<DMeteo> DatiMeteo { get; set; }
+        public DbSet<DCitta> DatiCittà { get; set; }
+        public DbSet<MeteoCittà> MetCitta { get; set; }
     }
 }
