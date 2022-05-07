@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace Api.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("[Controller]")]
     public class MetControllers : ControllerBase
     {
         private readonly IMeteoRep meteoRep;

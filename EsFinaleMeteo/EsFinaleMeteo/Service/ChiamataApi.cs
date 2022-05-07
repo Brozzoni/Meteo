@@ -17,12 +17,12 @@ namespace EsFinaleMeteo.Service
         }
         public async Task<IEnumerable<DCitta>> LocationSearch(string citta)
         {
-            return await httpClient.GetFromJsonAsync<IEnumerable<DCitta>>(@$"MeteoRep/LocationSearch/{citta}");
+            return await httpClient.GetFromJsonAsync<IEnumerable<DCitta>>($"MetControllers/LocationSearch/{citta}");
         }
 
         public async Task<IEnumerable<DMeteo>> DailyMeteo(string codice)
         {
-            return await httpClient.GetFromJsonAsync<IEnumerable<DMeteo>>(@$"MeteoRep/DailyMeteo/{codice}");
+            return await httpClient.GetFromJsonAsync<IEnumerable<DMeteo>>(@$"MetControllers/DailyMeteo/{codice}");
         }
     }
 }

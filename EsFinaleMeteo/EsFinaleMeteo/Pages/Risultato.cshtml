@@ -8,7 +8,7 @@
     <div class="text-center">
         <br />
         <br />
-        <h1 class="text-black-50" align="center"><i>Ecco i dati meteo di ....</i></h1>
+        <h1 class="text-black-50" align="center"><i>Ecco i dati meteo di...</i></h1>
         <br />
         <br />
     </div>
@@ -36,12 +36,23 @@
                     </tr>
                 </thead>
                 <tbody>
+                    @foreach (var item in Model.ris)
+                    {
+                        <tr>
+                            <td>@item.date</td>
+                            <td>@item.minTemp</td>
+                            <td>@item.maxTemp</td>
+                            <td></td>
+                            <td>@item.precipProb</td>
+                        </tr>
+
+                    }
                 </tbody>
             </table>
             <br />
-            <div class="text-center">
+            @*<div class="text-center">
                 <button type="submit" id="cerca" class="btn btn-info" style="width:100px">Torna alla home</button>
-            </div>
+            </div>*@
         </div>
     </div>
 </form>
