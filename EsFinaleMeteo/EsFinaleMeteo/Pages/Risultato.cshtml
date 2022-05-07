@@ -25,25 +25,31 @@
                     transform: translate(-50%, -50%);
                 }
             </style>
-            <table class="table">
+            <table class="table" align="center">
                 <thead>
                     <tr>
+                        <th></th>
                         <th>Giorno</th>
                         <th>MinT</th>
                         <th>MaxT</th>
                         <th>MediaT</th>
                         <th>%Probabilità</th>
+                        <th>Alba</th>
+                        <th>Tramonto</th>
                     </tr>
                 </thead>
                 <tbody>
                     @foreach (var item in Model.ris)
                     {
-                        <tr>
+                        <tr align="center">
+                            <td>@item.symbolPhrase</td>
                             <td>@item.date</td>
                             <td>@item.minTemp</td>
                             <td>@item.maxTemp</td>
                             <td></td>
                             <td>@item.precipProb</td>
+                            <td>@item.sunrise</td>
+                            <td>@item.sunset</td>
                         </tr>
 
                     }

@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace EsFinaleMeteo.Pages
 {
-   // [Authorize]
+   [Authorize]
 
     public class IndexModel : PageModel
     {

@@ -24,6 +24,9 @@ namespace EsFinaleMeteo.Pages
         [BindProperty]
         public List<DMeteo> ris { get; set; }
 
+        [BindProperty]
+        public decimal avg { get; set; }
+
         public async Task<IActionResult> OnGetAsync(string ID)
         {
             ris = await rep.DailyMeteo(ID) as List<DMeteo>;
