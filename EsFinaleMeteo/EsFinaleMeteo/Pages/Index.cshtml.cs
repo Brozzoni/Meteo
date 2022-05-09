@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace EsFinaleMeteo.Pages
 {
-   [Authorize]
+   //[Authorize]
 
     public class IndexModel : PageModel
     {
@@ -27,15 +27,15 @@ namespace EsFinaleMeteo.Pages
         [BindProperty]
         public DCitta citta { get; set; }
 
-        public void OnGet()
+        public async Task<IActionResult> OnGetAsync()
         {
-
+            return Page();
         }
 
         public async Task<IActionResult> OnPostAsync()
         {
             var cerca = await rep.LocationSearch(citta.name);
-            return RedirectToPage("/Risultato", new { ID = cerca.First().id });          
+            return RedirectToPage("/Risultato", new { ID = cerca.First().id, CITTA=cerca.First().name });          
         }
     }
 }

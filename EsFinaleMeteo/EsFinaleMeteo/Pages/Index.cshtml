@@ -7,7 +7,7 @@
     body, html {
         height: 100%;
         /* The image used */
-        background-image: url("../images/Radio_Foto_Home.PNG");
+        background-image: url("../images/sole.jpg");
         /* Center and scale the image nicely */
         background-position: center;
         background-repeat: no-repeat;
@@ -18,7 +18,7 @@
 <div class="text-center">
     <br />
     <br />
-    <h1 class="text-black-50" align="center"><i>Benvenuto in MeteoB</i></h1>
+    <h1 class="text-white" align="center" style="font-size: 50px"><i>Benvenuto in MeteoB</i></h1>
     <br />
     <br />
 </div>
@@ -36,11 +36,13 @@
                     transform: translate(-50%, -50%);
                 }
             </style>
-            <h5 class="text-black-50" align="center"><i>Inserire la città desiderata</i></h5>
+            <h5 class="text-white" align="center"><i>Inserire la città desiderata</i></h5>
+            <br />
             <div align="center">
-                <input asp-for="citta.name" />
+                <input asp-for="citta.name" class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
                 <span asp-validation-for="citta.name"></span>
-            </div>    
+            </div>
+            <br />
             <br />
             <div class="text-center">
                 <button type="submit" id="cerca" class="btn btn-info" style="width:100px">Cerca</button>

@@ -3,18 +3,28 @@
 @{
     ViewData["Title"] = "Risultato";
 }
+<style>
+    body, html {
+        height: 100%;
+        /* The image used */
+        background-image: url("../images/sole.jpg");
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+</style>
 
 <form method="post">
     <div class="text-center">
         <br />
         <br />
-        <h1 class="text-black-50" align="center"><i>Ecco i dati meteo di...</i></h1>
+        <h1 class="text-white" align="center" style="font-size: 50px"><i>Ecco i dati meteo di @Model.citta</i></h1>
         <br />
         <br />
     </div>
-    <div class="row">
-        <div class="col-lg-4"></div>
-        <div class="col-lg-4">
+    <div class="text-white-50">
+        <div class="col-lg-4; text-center">
             <style>
                 .center {
                     margin: 0;
@@ -25,36 +35,38 @@
                     transform: translate(-50%, -50%);
                 }
             </style>
-            <table class="table" align="center">
-                <thead>
-                    <tr>
-                        <th></th>
-                        <th>Giorno</th>
-                        <th>MinT</th>
-                        <th>MaxT</th>
-                        <th>MediaT</th>
-                        <th>%Probabilità</th>
-                        <th>Alba</th>
-                        <th>Tramonto</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    @foreach (var item in Model.ris)
-                    {
-                        <tr align="center">
-                            <td>@item.symbolPhrase</td>
-                            <td>@item.date</td>
-                            <td>@item.minTemp</td>
-                            <td>@item.maxTemp</td>
-                            <td></td>
-                            <td>@item.precipProb</td>
-                            <td>@item.sunrise</td>
-                            <td>@item.sunset</td>
+            <b>
+                <table class="table text-black" align="center">
+                    <thead>
+                        <tr style="font-size: 20px">
+                            <th>Condizione</th>
+                            <th>Giorno</th>
+                            <th>MinT</th>
+                            <th>MaxT</th>
+                            <th>MediaT</th>
+                            <th>%Probabilità</th>
+                            <th>Alba</th>
+                            <th>Tramonto</th>
                         </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model.ris)
+                        {
+                            <tr>
+                                <td>@item.symbolPhrase</td>
+                                <td>@item.date</td>
+                                <td>@item.minTemp</td>
+                                <td>@item.maxTemp</td>
+                                <td>@((@item.minTemp + @item.maxTemp)/2)</td>
+                                <td>@item.precipProb</td>
+                                <td>@item.sunrise</td>
+                                <td>@item.sunset</td>
+                            </tr>
 
-                    }
-                </tbody>
-            </table>
+                        }
+                    </tbody>
+                </table>
+            </b>
             <br />
             @*<div class="text-center">
                 <button type="submit" id="cerca" class="btn btn-info" style="width:100px">Torna alla home</button>

@@ -27,9 +27,13 @@ namespace EsFinaleMeteo.Pages
         [BindProperty]
         public decimal avg { get; set; }
 
-        public async Task<IActionResult> OnGetAsync(string ID)
+        [BindProperty]
+        public string citta { get; set; }
+
+        public async Task<IActionResult> OnGetAsync(string ID, string CITTA)
         {
             ris = await rep.DailyMeteo(ID) as List<DMeteo>;
+            citta = CITTA;
             return Page();
         }
 
