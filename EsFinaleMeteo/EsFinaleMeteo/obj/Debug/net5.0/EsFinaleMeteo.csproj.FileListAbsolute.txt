@@ -435,3 +435,4 @@ C:\Users\brozz\Desktop\GitHub\Meteo\EsFinaleMeteo\EsFinaleMeteo\obj\Debug\net5.0
 C:\Users\brozz\Desktop\GitHub\Meteo\EsFinaleMeteo\EsFinaleMeteo\obj\Debug\net5.0\EsFinaleMeteo.genruntimeconfig.cache
 C:\Users\brozzoni.17118\Documents\GitHub\EsFinaleMeteo\EsFinaleMeteo\obj\Debug\net5.0\Razor\Pages\Preferiti.cshtml.g.cs
 C:\Users\brozzoni.17118\Documents\GitHub\EsFinaleMeteo\EsFinaleMeteo\obj\Debug\net5.0\Razor\Pages\Risultato.cshtml.g.cs
+C:\Users\brozz\Desktop\GitHub\Meteo\EsFinaleMeteo\EsFinaleMeteo\obj\Debug\net5.0\Razor\Pages\Preferiti.cshtml.g.cs

@@ -6,12 +6,44 @@
 <style>
     body, html {
         height: 100%;
-        /* The image used */
         background-image: url("../images/sole.jpg");
-        /* Center and scale the image nicely */
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
     }
 </style>
 
+<form method="post">
+    <div class="text-center">
+        <br />
+        <br />
+        <h1 class="text-white" align="center" style="font-size: 50px"><i>Preferiti di @Model.User.Identity.Name</i></h1>
+        <br />
+        <br />
+    </div>
+    <table class="table text-black" align="center">
+        <thead>
+            <tr style="font-size: 20px">
+                <th>Città</th>
+                <th>Stato</th>
+                <th>Longitudine</th>
+                <th>Latitudine</th>
+                <th>Cerca Ora</th>
+                <th>Rimuovi</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.eleCittaUte)
+            {
+                <tr>
+                    <td>@item.name</td>
+                    <td>@item.state</td>
+                    <td>@item.lon</td>
+                    <td>@item.lat</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</form>

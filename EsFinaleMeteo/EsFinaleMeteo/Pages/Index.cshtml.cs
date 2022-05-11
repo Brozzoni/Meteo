@@ -13,11 +13,10 @@ using System.Threading.Tasks;
 
 namespace EsFinaleMeteo.Pages
 {
-    //[Authorize]
-
     public class IndexModel : PageModel
     {
         private readonly AppDbContext _context;
+
         [Inject]
         public IChiamata rep { get; set; }
 
@@ -39,9 +38,6 @@ namespace EsFinaleMeteo.Pages
         {
             var cerca = await rep.LocationSearch(citta.name);
             return RedirectToPage("/Risultato", new { ID = cerca.First().id, CITTA = cerca.First().name });
-
         }
-
     }
-
 }

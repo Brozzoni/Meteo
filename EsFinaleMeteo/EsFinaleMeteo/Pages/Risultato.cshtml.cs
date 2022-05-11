@@ -6,15 +6,18 @@ using System.Threading.Tasks;
 using EsFinaleMeteo.Data;
 using EsFinaleMeteo.Model;
 using EsFinaleMeteo.Service;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace EsFinaleMeteo.Pages
 {
+    [Authorize]
     public class RisultatoModel : PageModel
     {
         private readonly AppDbContext _context;
+
         [Inject]
         public IChiamata rep { get; set; }
 
@@ -28,22 +31,24 @@ namespace EsFinaleMeteo.Pages
         public List<DMeteo> ris { get; set; }
 
         [BindProperty]
-        public decimal avg { get; set; }
-
-        [BindProperty]
-        public string citta { get; set; }
+        public DCitta citta { get; set; }
 
         public async Task<IActionResult> OnGetAsync(string ID, string CITTA)
         {
             ris = await rep.DailyMeteo(ID) as List<DMeteo>;
-            citta = CITTA;
+
+            citta = new DCitta();
+            citta.name = CITTA;
+
             return Page();
         }
 
-        public void OnPost(int id)
+        public async Task<IActionResult> OnPostAsync(int id)
         {
             AddFavourites(id);
+            return RedirectToPage("/Preferiti");
         }
+
         void AddFavourites(int? idCitta)
         {
             if (idCitta != null)
@@ -57,7 +62,6 @@ namespace EsFinaleMeteo.Pages
                 _context.UtentiCitta.Add(UtCitta);
                 _context.SaveChangesAsync();
             }
-
         }
     }
 }

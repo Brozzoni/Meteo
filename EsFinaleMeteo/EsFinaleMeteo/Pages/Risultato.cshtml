@@ -6,9 +6,7 @@
 <style>
     body, html {
         height: 100%;
-        /* The image used */
         background-image: url("../images/sole.jpg");
-        /* Center and scale the image nicely */
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -19,7 +17,7 @@
     <div class="text-center">
         <br />
         <br />
-        <h1 class="text-white" align="center" style="font-size: 50px"><i>Ecco i dati meteo di @Model.citta</i></h1>
+        <h1 class="text-white" align="center" style="font-size: 50px"><i>Ecco il meteo di @Model.citta.name</i></h1>
         <br />
         <br />
     </div>
@@ -62,14 +60,13 @@
                                 <td>@item.sunrise</td>
                                 <td>@item.sunset</td>
                             </tr>
-
                         }
                     </tbody>
                 </table>
             </b>
             <br />
             <div class="text-center">
-                <button type="submit" id="cerca" class="btn btn-link" style="width:100px">Aggiungi @Model.citta ai preferiti</button>
+                <button type="submit" id="cerca" class="btn btn-light" style="width:300px">Aggiungi @Model.citta.name ai preferiti</button>
             </div>
         </div>
     </div>

@@ -113,7 +113,6 @@ C:\Users\brozz\Desktop\GitHub\Meteo\EsFinaleMeteo\Api\obj\Debug\net5.0\staticweb
 C:\Users\brozz\Desktop\GitHub\Meteo\EsFinaleMeteo\Api\obj\Debug\net5.0\staticwebassets\Api.StaticWebAssets.xml
 C:\Users\brozz\Desktop\GitHub\Meteo\EsFinaleMeteo\Api\obj\Debug\net5.0\scopedcss\bundle\Api.styles.css
 C:\Users\brozz\Desktop\GitHub\Meteo\EsFinaleMeteo\Api\obj\Debug\net5.0\Api.RazorTargetAssemblyInfo.cache
-C:\Users\brozz\Desktop\GitHub\Meteo\EsFinaleMeteo\Api\obj\Debug\net5.0\Api.csproj.CopyComplete
 C:\Users\brozz\Desktop\GitHub\Meteo\EsFinaleMeteo\Api\obj\Debug\net5.0\Api.dll
 C:\Users\brozz\Desktop\GitHub\Meteo\EsFinaleMeteo\Api\obj\Debug\net5.0\ref\Api.dll
 C:\Users\brozz\Desktop\GitHub\Meteo\EsFinaleMeteo\Api\obj\Debug\net5.0\Api.pdb
