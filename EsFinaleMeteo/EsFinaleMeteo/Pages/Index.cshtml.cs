@@ -1,4 +1,5 @@
-﻿using EsFinaleMeteo.Model;
+﻿using EsFinaleMeteo.Data;
+using EsFinaleMeteo.Model;
 using EsFinaleMeteo.Service;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Components;
@@ -12,16 +13,18 @@ using System.Threading.Tasks;
 
 namespace EsFinaleMeteo.Pages
 {
-   //[Authorize]
+    //[Authorize]
 
     public class IndexModel : PageModel
     {
+        private readonly AppDbContext _context;
         [Inject]
         public IChiamata rep { get; set; }
 
-        public IndexModel(IChiamata scrapingRepository)
+        public IndexModel(IChiamata scrapingRepository, AppDbContext context)
         {
             this.rep = scrapingRepository;
+            _context = context;
         }
 
         [BindProperty]
@@ -35,7 +38,10 @@ namespace EsFinaleMeteo.Pages
         public async Task<IActionResult> OnPostAsync()
         {
             var cerca = await rep.LocationSearch(citta.name);
-            return RedirectToPage("/Risultato", new { ID = cerca.First().id, CITTA=cerca.First().name });          
+            return RedirectToPage("/Risultato", new { ID = cerca.First().id, CITTA = cerca.First().name });
+
         }
+
     }
+
 }

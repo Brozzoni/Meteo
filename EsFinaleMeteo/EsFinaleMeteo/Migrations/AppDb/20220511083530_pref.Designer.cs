@@ -2,14 +2,16 @@
 using EsFinaleMeteo.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace EsFinaleMeteo.Migrations.AppDb
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20220511083530_pref")]
+    partial class pref
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -161,14 +163,15 @@ namespace EsFinaleMeteo.Migrations.AppDb
 
             modelBuilder.Entity("EsFinaleMeteo.Model.UtCitta", b =>
                 {
-                    b.Property<string>("ID")
-                        .HasColumnType("TEXT");
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
 
                     b.Property<int>("idCit")
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("idUt")
-                        .HasColumnType("TEXT");
+                    b.Property<int>("idUt")
+                        .HasColumnType("INTEGER");
 
                     b.HasKey("ID");
 

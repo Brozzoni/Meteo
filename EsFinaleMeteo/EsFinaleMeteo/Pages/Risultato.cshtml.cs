@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using EsFinaleMeteo.Data;
 using EsFinaleMeteo.Model;
 using EsFinaleMeteo.Service;
 using Microsoft.AspNetCore.Components;
@@ -13,12 +14,14 @@ namespace EsFinaleMeteo.Pages
 {
     public class RisultatoModel : PageModel
     {
+        private readonly AppDbContext _context;
         [Inject]
         public IChiamata rep { get; set; }
 
-        public RisultatoModel(IChiamata scrapingRepository)
+        public RisultatoModel(IChiamata scrapingRepository, AppDbContext context)
         {
             this.rep = scrapingRepository;
+            _context = context;
         }
 
         [BindProperty]
@@ -37,8 +40,23 @@ namespace EsFinaleMeteo.Pages
             return Page();
         }
 
-        public void OnPost()
+        public void OnPost(int id)
         {
+            AddFavourites(id);
+        }
+        void AddFavourites(int? idCitta)
+        {
+            if (idCitta != null)
+            {
+                var UtCitta = new UtCitta()
+                {
+                    ID = Guid.NewGuid().ToString(),
+                    idCit = int.Parse(idCitta.ToString()),
+                    idUt = User.Identity.Name
+                };
+                _context.UtentiCitta.Add(UtCitta);
+                _context.SaveChangesAsync();
+            }
 
         }
     }
