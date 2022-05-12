@@ -53,15 +53,15 @@ namespace EsFinaleMeteo.Pages
             return Page();
         }
 
-        public async Task<IActionResult> OnPostAsync(int? id, string cit)
+        public async Task<IActionResult> OnPostAsync(int? id, string? citta)
         {
             string buttonClicked = Request.Form["SubmitButton"];
 
             if (buttonClicked == "search")
             {
                 //citta.name = cit;
-                var cerca = await rep.DailyMeteo(id.ToString());
-                return RedirectToPage("/RisultatoPreferiti", new { risultato = cerca.First(), CITTA = citta.name });
+                //var cerca = await rep.DailyMeteo(id.ToString());
+                return RedirectToPage("/RisultatoPreferiti", new { id = id, citta = citta });
             }
 
             if (buttonClicked == "delete")

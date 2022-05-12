@@ -41,7 +41,7 @@
                         <td>@item.country</td>
                         <td>@item.lon</td>
                         <td>@item.lat</td>
-                        <td><button type="submit" value="search" name="SubmitButton" class="btn btn-outline-primary" asp-route-id="@item.id" style="width:100px">Cerca</button></td>
+                        <td><button type="submit" value="search" name="SubmitButton" class="btn btn-outline-primary" asp-route-id="@item.id" asp-route-citta="@item.name" style="width:100px">Cerca</button></td>
                         <td><button type="submit" value="delete" name="SubmitButton" class="btn btn-outline-primary" asp-route-id="@item.id" style="width:100px">Rimuovi</button></td>
                     </tr>
                 }
