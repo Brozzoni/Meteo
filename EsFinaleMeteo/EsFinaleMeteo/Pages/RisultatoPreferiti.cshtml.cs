@@ -32,14 +32,17 @@ namespace EsFinaleMeteo.Pages
         public List<DCitta> eleCittaUte { get; set; }
         public List<DCitta> eleCitta { get; set; }
         public List<DMeteo> ris { get; set; }
+
+        [BindProperty]
         public DCitta citta { get; set; }
 
-        public async Task<IActionResult> OnGetAsync(int? id)
+        public async Task<IActionResult> OnGetAsync(List<DMeteo> risultato, string cit)
         {
             ris = new List<DMeteo>();
-            ris = await rep.DailyMeteo(id.ToString()) as List<DMeteo>;
+            ris = risultato;
             citta = new DCitta();
-            //citta.name = CITTA;
+            citta.name = cit;
+            //ris = await rep.DailyMeteo(ID.ToString()) as List<DMeteo>;
 
             return Page();
         }

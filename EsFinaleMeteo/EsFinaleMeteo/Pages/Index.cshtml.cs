@@ -42,6 +42,7 @@ namespace EsFinaleMeteo.Pages
             {
                 if(_context.DatiCittà.Contains(item))
                     return RedirectToPage("/Risultato", new { ID = cerca.First().id, CITTA = cerca.First().name });
+
                 _context.DatiCittà.Add(item); 
             }
 

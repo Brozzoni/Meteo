@@ -21,29 +21,31 @@
         <br />
         <br />
     </div>
-    <table class="table text-blck" align="center">
-        <thead>
-            <tr style="font-size: 20px">
-                <th>Città</th>
-                <th>Stato</th>
-                <th>Longitudine</th>
-                <th>Latitudine</th>
-                <th>Cerca Ora</th>
-                <th>Rimuovi</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var item in Model.eleCittaUte)
-            {
-                <tr >
-                    <td>@item.name</td>
-                    <td>@item.country</td>
-                    <td>@item.lon</td>
-                    <td>@item.lat</td>
-                    <td><button type="submit" value="search" name="SubmitButton" class="btn btn-outline-primary" asp-route-id="@item.id" asp-page="/RisultatoPreferiti" style="width:100px">Cerca</button></td>
-                    <td><button type="submit" value="delete" name="SubmitButton" class="btn btn-outline-primary" asp-route-id="@item.id" asp-page="/RisultatoPreferiti" style="width:100px">Rimuovi</button></td>
+    <b>
+        <table class="table text-blck" align="center">
+            <thead>
+                <tr style="font-size: 20px">
+                    <th>Città</th>
+                    <th>Stato</th>
+                    <th>Longitudine</th>
+                    <th>Latitudine</th>
+                    <th>Cerca Ora</th>
+                    <th>Rimuovi</th>
                 </tr>
-            }
-        </tbody>
-    </table>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.eleCittaUte)
+                {
+                    <tr>
+                        <td>@item.name</td>
+                        <td>@item.country</td>
+                        <td>@item.lon</td>
+                        <td>@item.lat</td>
+                        <td><button type="submit" value="search" name="SubmitButton" class="btn btn-outline-primary" asp-route-id="@item.id" style="width:100px">Cerca</button></td>
+                        <td><button type="submit" value="delete" name="SubmitButton" class="btn btn-outline-primary" asp-route-id="@item.id" style="width:100px">Rimuovi</button></td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </b>    
 </form>

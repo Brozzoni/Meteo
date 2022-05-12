@@ -65,10 +65,10 @@ namespace EsFinaleMeteo.Pages
                     idCit = int.Parse(idCitta.ToString()),
                     idUt = User.Identity.Name
                 };
+
                 if (_context.UtentiCitta.Where(p => p.idCit == UtCitta.idCit).FirstOrDefault() != null)
-                {
                     return;
-                }
+
                 _context.UtentiCitta.Add(UtCitta);
                 _context.SaveChangesAsync();
             }

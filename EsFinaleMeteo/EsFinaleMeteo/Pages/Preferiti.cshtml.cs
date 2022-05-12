@@ -53,35 +53,36 @@ namespace EsFinaleMeteo.Pages
             return Page();
         }
 
-        //public async Task<IActionResult> OnPostAsync(string? id)
-        //{
-        //    string buttonClicked = Request.Form["SubmitButton"];
+        public async Task<IActionResult> OnPostAsync(int? id, string cit)
+        {
+            string buttonClicked = Request.Form["SubmitButton"];
 
-        //    if (buttonClicked == "search")
-        //    {
-        //        var cerca = await rep.DailyMeteo(ID) as List<DMeteo>;
-        //        return RedirectToPage("/Risultato", new { ID = cerca.First().id, CITTA = cerca.First().name });
-        //    }
+            if (buttonClicked == "search")
+            {
+                //citta.name = cit;
+                var cerca = await rep.DailyMeteo(id.ToString());
+                return RedirectToPage("/RisultatoPreferiti", new { risultato = cerca.First(), CITTA = citta.name });
+            }
 
-        //    if (buttonClicked == "delete")
-        //    {
-        //        var z = _context.DatiCittà.FirstOrDefault(p => p.id == id);
-        //        var ass = _context.UtentiCitta.FirstOrDefault(p => p.idCit == id);
+            if (buttonClicked == "delete")
+            {
+                var z = _context.DatiCittà.FirstOrDefault(p => p.id == id);
+                var ass = _context.UtentiCitta.FirstOrDefault(p => p.idCit == id);
 
-        //        _context.DatiCittà.Remove(z);
-        //        _context.UtentiCitta.Remove(ass);
+                _context.DatiCittà.Remove(z);
+                _context.UtentiCitta.Remove(ass);
 
-        //        try
-        //        {
-        //            await _context.SaveChangesAsync();
-        //            return RedirectToPage("/Index");
-        //        }
-        //        catch
-        //        {
-        //            return RedirectToPage("/Error");
-        //        }
-        //    }
-        //    return Page();
-        //}
+                try
+                {
+                    await _context.SaveChangesAsync();
+                    return RedirectToPage("/Index");
+                }
+                catch
+                {
+                    return RedirectToPage("/Error");
+                }
+            }
+            return Page();
+        }
     }
 }
