@@ -325,7 +325,6 @@ C:\Users\brozzoni.17118\Documents\GitHub\EsFinaleMeteo\EsFinaleMeteo\obj\Debug\n
 C:\Users\brozzoni.17118\Documents\GitHub\EsFinaleMeteo\EsFinaleMeteo\obj\Debug\net5.0\EsFinaleMeteo.pdb
 C:\Users\brozzoni.17118\Documents\GitHub\EsFinaleMeteo\EsFinaleMeteo\obj\Debug\net5.0\EsFinaleMeteo.genruntimeconfig.cache
 C:\Users\brozzoni.17118\Documents\GitHub\Meteo\EsFinaleMeteo\EsFinaleMeteo\obj\Debug\net5.0\Razor\Pages\Risultato.cshtml.g.cs
-C:\Users\brozzoni.17118\Documents\GitHub\Meteo\EsFinaleMeteo\EsFinaleMeteo\obj\Debug\net5.0\EsFinaleMeteo.csprojAssemblyReference.cache
 C:\Users\brozz\Desktop\GitHub\Meteo\EsFinaleMeteo\EsFinaleMeteo\bin\Debug\net5.0\appsettings.Development.json
 C:\Users\brozz\Desktop\GitHub\Meteo\EsFinaleMeteo\EsFinaleMeteo\bin\Debug\net5.0\appsettings.json
 C:\Users\brozz\Desktop\GitHub\Meteo\EsFinaleMeteo\EsFinaleMeteo\bin\Debug\net5.0\EsFinaleMeteo.StaticWebAssets.xml
@@ -436,3 +435,5 @@ C:\Users\brozz\Desktop\GitHub\Meteo\EsFinaleMeteo\EsFinaleMeteo\obj\Debug\net5.0
 C:\Users\brozzoni.17118\Documents\GitHub\EsFinaleMeteo\EsFinaleMeteo\obj\Debug\net5.0\Razor\Pages\Preferiti.cshtml.g.cs
 C:\Users\brozzoni.17118\Documents\GitHub\EsFinaleMeteo\EsFinaleMeteo\obj\Debug\net5.0\Razor\Pages\Risultato.cshtml.g.cs
 C:\Users\brozz\Desktop\GitHub\Meteo\EsFinaleMeteo\EsFinaleMeteo\obj\Debug\net5.0\Razor\Pages\Preferiti.cshtml.g.cs
+C:\Users\brozzoni.17118\Documents\GitHub\Meteo\EsFinaleMeteo\EsFinaleMeteo\obj\Debug\net5.0\EsFinaleMeteo.csproj.AssemblyReference.cache
+C:\Users\brozzoni.17118\Documents\GitHub\Meteo\EsFinaleMeteo\EsFinaleMeteo\obj\Debug\net5.0\Razor\Pages\Preferiti.cshtml.g.cs

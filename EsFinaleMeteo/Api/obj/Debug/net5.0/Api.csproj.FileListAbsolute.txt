@@ -86,8 +86,6 @@ C:\Users\brozzoni.17118\Documents\GitHub\Meteo\EsFinaleMeteo\Api\obj\Debug\net5.
 C:\Users\brozzoni.17118\Documents\GitHub\Meteo\EsFinaleMeteo\Api\obj\Debug\net5.0\ref\Api.dll
 C:\Users\brozzoni.17118\Documents\GitHub\Meteo\EsFinaleMeteo\Api\obj\Debug\net5.0\Api.pdb
 C:\Users\brozzoni.17118\Documents\GitHub\Meteo\EsFinaleMeteo\Api\obj\Debug\net5.0\Api.genruntimeconfig.cache
-C:\Users\brozzoni.17118\Documents\GitHub\Meteo\EsFinaleMeteo\Api\obj\Debug\net5.0\Api.csprojAssemblyReference.cache
-C:\Users\brozzoni.17118\Documents\GitHub\Meteo\EsFinaleMeteo\Api\obj\Debug\net5.0\staticwebassets\Api.StaticWebAssets.xml
 C:\Users\brozz\Desktop\GitHub\Meteo\EsFinaleMeteo\Api\bin\Debug\net5.0\appsettings.Development.json
 C:\Users\brozz\Desktop\GitHub\Meteo\EsFinaleMeteo\Api\bin\Debug\net5.0\appsettings.json
 C:\Users\brozz\Desktop\GitHub\Meteo\EsFinaleMeteo\Api\bin\Debug\net5.0\Api.exe
@@ -147,3 +145,5 @@ C:\Users\brozzoni.17118\Documents\GitHub\EsFinaleMeteo\Api\obj\Debug\net5.0\Api.
 C:\Users\brozzoni.17118\Documents\GitHub\EsFinaleMeteo\Api\obj\Debug\net5.0\ref\Api.dll
 C:\Users\brozzoni.17118\Documents\GitHub\EsFinaleMeteo\Api\obj\Debug\net5.0\Api.pdb
 C:\Users\brozzoni.17118\Documents\GitHub\EsFinaleMeteo\Api\obj\Debug\net5.0\Api.genruntimeconfig.cache
+C:\Users\brozzoni.17118\Documents\GitHub\Meteo\EsFinaleMeteo\Api\bin\Debug\net5.0\Api.StaticWebAssets.xml
+C:\Users\brozzoni.17118\Documents\GitHub\Meteo\EsFinaleMeteo\Api\obj\Debug\net5.0\Api.csproj.AssemblyReference.cache
