@@ -36,11 +36,17 @@ namespace EsFinaleMeteo.Pages
         public async Task<IActionResult> OnGetAsync(string ID, string CITTA)
         {
             ris = await rep.DailyMeteo(ID) as List<DMeteo>;
-
             citta = new DCitta();
             citta.name = CITTA;
 
-            return Page();
+            foreach (var item in ris) { _context.DatiMeteo.Add(item); }
+
+            try
+            {
+                await _context.SaveChangesAsync();
+                return Page();
+            }
+            catch { return NotFound(); }     
         }
 
         public async Task<IActionResult> OnPostAsync(int id)
@@ -59,6 +65,10 @@ namespace EsFinaleMeteo.Pages
                     idCit = int.Parse(idCitta.ToString()),
                     idUt = User.Identity.Name
                 };
+                if (_context.UtentiCitta.Where(p => p.idCit == UtCitta.idCit).FirstOrDefault() != null)
+                {
+                    return;
+                }
                 _context.UtentiCitta.Add(UtCitta);
                 _context.SaveChangesAsync();
             }

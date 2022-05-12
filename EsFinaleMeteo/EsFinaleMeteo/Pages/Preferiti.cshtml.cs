@@ -4,7 +4,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using EsFinaleMeteo.Data;
 using EsFinaleMeteo.Model;
+using EsFinaleMeteo.Service;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
@@ -15,9 +17,13 @@ namespace EsFinaleMeteo.Pages
     public class PreferitiModel : PageModel
     {
         private readonly AppDbContext _context;
-        
-        public PreferitiModel(AppDbContext context)
+
+        [Inject]
+        public IChiamata rep { get; set; }
+
+        public PreferitiModel(IChiamata scrapingRepository, AppDbContext context)
         {
+            this.rep = scrapingRepository;
             _context = context;
             eleAsso = _context.UtentiCitta.ToList();
             eleCitta = _context.DatiCittà.ToList();
@@ -27,6 +33,9 @@ namespace EsFinaleMeteo.Pages
         public List<UtCitta> eleAssoUtCit { get; set; }
         public List<DCitta> eleCittaUte { get; set; }
         public List<DCitta> eleCitta { get; set; }
+
+        [BindProperty]
+        public DCitta citta { get; set; }
 
         public async Task<IActionResult> OnGetAsync()
         {
@@ -44,9 +53,35 @@ namespace EsFinaleMeteo.Pages
             return Page();
         }
 
-        public async Task<IActionResult> OnPostAsync(int id)
-        {
-            return Page();
-        }
+        //public async Task<IActionResult> OnPostAsync(string? id)
+        //{
+        //    string buttonClicked = Request.Form["SubmitButton"];
+
+        //    if (buttonClicked == "search")
+        //    {
+        //        var cerca = await rep.DailyMeteo(ID) as List<DMeteo>;
+        //        return RedirectToPage("/Risultato", new { ID = cerca.First().id, CITTA = cerca.First().name });
+        //    }
+
+        //    if (buttonClicked == "delete")
+        //    {
+        //        var z = _context.DatiCittà.FirstOrDefault(p => p.id == id);
+        //        var ass = _context.UtentiCitta.FirstOrDefault(p => p.idCit == id);
+
+        //        _context.DatiCittà.Remove(z);
+        //        _context.UtentiCitta.Remove(ass);
+
+        //        try
+        //        {
+        //            await _context.SaveChangesAsync();
+        //            return RedirectToPage("/Index");
+        //        }
+        //        catch
+        //        {
+        //            return RedirectToPage("/Error");
+        //        }
+        //    }
+        //    return Page();
+        //}
     }
 }

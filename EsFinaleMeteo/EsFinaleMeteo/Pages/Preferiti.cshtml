@@ -21,7 +21,7 @@
         <br />
         <br />
     </div>
-    <table class="table text-black" align="center">
+    <table class="table text-blck" align="center">
         <thead>
             <tr style="font-size: 20px">
                 <th>Città</th>
@@ -35,13 +35,13 @@
         <tbody>
             @foreach (var item in Model.eleCittaUte)
             {
-                <tr>
+                <tr >
                     <td>@item.name</td>
-                    <td>@item.state</td>
+                    <td>@item.country</td>
                     <td>@item.lon</td>
                     <td>@item.lat</td>
-                    <td></td>
-                    <td></td>
+                    <td><button type="submit" value="search" name="SubmitButton" class="btn btn-outline-primary" asp-route-id="@item.id" asp-page="/RisultatoPreferiti" style="width:100px">Cerca</button></td>
+                    <td><button type="submit" value="delete" name="SubmitButton" class="btn btn-outline-primary" asp-route-id="@item.id" asp-page="/RisultatoPreferiti" style="width:100px">Rimuovi</button></td>
                 </tr>
             }
         </tbody>

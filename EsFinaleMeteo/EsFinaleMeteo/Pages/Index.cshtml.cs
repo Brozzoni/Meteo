@@ -37,7 +37,20 @@ namespace EsFinaleMeteo.Pages
         public async Task<IActionResult> OnPostAsync()
         {
             var cerca = await rep.LocationSearch(citta.name);
-            return RedirectToPage("/Risultato", new { ID = cerca.First().id, CITTA = cerca.First().name });
+
+            foreach (var item in cerca) 
+            {
+                if(_context.DatiCittà.Contains(item))
+                    return RedirectToPage("/Risultato", new { ID = cerca.First().id, CITTA = cerca.First().name });
+                _context.DatiCittà.Add(item); 
+            }
+
+            try
+            {
+                await _context.SaveChangesAsync();
+                return RedirectToPage("/Risultato", new { ID = cerca.First().id, CITTA = cerca.First().name });
+            }
+            catch { return NotFound(); }
         }
     }
 }

@@ -230,7 +230,8 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\brozzoni.17118\\.nuget\\packages\\": {}
+    "C:\\Users\\brozzoni.17118\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
@@ -241,6 +242,9 @@
       "packagesPath": "C:\\Users\\brozzoni.17118\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\brozzoni.17118\\Documents\\GitHub\\Meteo\\EsFinaleMeteo\\Api\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
         "C:\\Users\\brozzoni.17118\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -295,7 +299,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
       }
     }
   }

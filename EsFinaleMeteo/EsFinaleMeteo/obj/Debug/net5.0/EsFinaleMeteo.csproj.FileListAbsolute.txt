@@ -435,5 +435,6 @@ C:\Users\brozz\Desktop\GitHub\Meteo\EsFinaleMeteo\EsFinaleMeteo\obj\Debug\net5.0
 C:\Users\brozzoni.17118\Documents\GitHub\EsFinaleMeteo\EsFinaleMeteo\obj\Debug\net5.0\Razor\Pages\Preferiti.cshtml.g.cs
 C:\Users\brozzoni.17118\Documents\GitHub\EsFinaleMeteo\EsFinaleMeteo\obj\Debug\net5.0\Razor\Pages\Risultato.cshtml.g.cs
 C:\Users\brozz\Desktop\GitHub\Meteo\EsFinaleMeteo\EsFinaleMeteo\obj\Debug\net5.0\Razor\Pages\Preferiti.cshtml.g.cs
-C:\Users\brozzoni.17118\Documents\GitHub\Meteo\EsFinaleMeteo\EsFinaleMeteo\obj\Debug\net5.0\EsFinaleMeteo.csproj.AssemblyReference.cache
 C:\Users\brozzoni.17118\Documents\GitHub\Meteo\EsFinaleMeteo\EsFinaleMeteo\obj\Debug\net5.0\Razor\Pages\Preferiti.cshtml.g.cs
+C:\Users\brozzoni.17118\Documents\GitHub\Meteo\EsFinaleMeteo\EsFinaleMeteo\obj\Debug\net5.0\EsFinaleMeteo.csprojAssemblyReference.cache
+C:\Users\brozzoni.17118\Documents\GitHub\Meteo\EsFinaleMeteo\EsFinaleMeteo\obj\Debug\net5.0\Razor\Pages\RisultatoPreferiti.cshtml.g.cs
